@@ -1,0 +1,10 @@
+* {
+    background-image: url("Images/loginbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header img {
+    height: 40px;
+}
