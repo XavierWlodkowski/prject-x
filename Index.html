@@ -29,8 +29,32 @@
             <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
         </div>
     </main>
-    <footer>
-    </footer>
+<footer>
+    <div class="footer-container">
+        <div class="social-media">
+            <h2>Volg ons op</h2>
+            <a href="https://www.instagram.com" target="_blank">
+            <img src="Images/Instagram_logo_2022.svg.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+            <img src="Images/x-logo-twitter-elon-musk_dezeen_2364_col_0.webp" alt="Twitter" class="social-icon">
+             </a>
+        </div>
+        <h2>Contacteer Ons</h2>
+        <form class="contact-form" action="mailto:jouw-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Verzenden</button>
+        </form>
+    </div>
+</footer>
     <!--Nodig voor sticky search balk-->
     <script src="Index.js"></script>
 </body>
