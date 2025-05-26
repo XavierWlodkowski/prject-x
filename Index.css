@@ -10,7 +10,7 @@
     font-family: 'Segoe UI', sans-serif;
     color: white;
   }
-  
+  /*Header Begin*/
   header {
     width: 100%;
     height: 60px;
@@ -31,7 +31,11 @@
     height: 100%;
     background-color: #ff4a4a;
   }
-  
+
+  .logo-container:hover {
+    transform: scale(1.1);
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -87,7 +91,8 @@
   nav .button a:hover {
     background-color: rgba(255, 74, 74, 0.2);
   }
-  
+  /*Header End*/
+  /*Backround image*/
   .image-container {
     position: relative;
     display: flex;
@@ -100,8 +105,10 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: background-position 0.1s;
+    z-index: 1;
   }
-  
+  /*End searchbar*/
+  /*Begin searchbar*/
   .search-bar {
     padding: 10px;
     font-size: 16px;
@@ -124,6 +131,30 @@
     transform: translateX(-50%);
     z-index: 10;
   }
+  /*End searchbar*/
+  /*Article begin*/
+  article {
+  padding: 50px 0;
+  background-color: #111;
+  z-index: 0;
+  }
+
+  article ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  article ul li {
+    display:block;
+    background-color: #d62828;
+    height: 200px;
+    width: 200px;
+  }
+  /*Article end*/
+  /*Begin footer*/
  footer {
     background-color: #1a1a1a;
     color: white;
@@ -194,7 +225,7 @@
 .contact-form button:hover {
     background-color: #d62828;
 }
-
+  /*End footer*/
   /* GSM MEDIA QUERY */
   @media (max-width: 767px) {
     .image-container {
@@ -217,3 +248,4 @@
       background-repeat: no-repeat;
     }
 }
+
