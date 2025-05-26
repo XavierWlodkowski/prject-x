@@ -125,22 +125,40 @@
     gap: 1rem;
   }
 
-  article {
+  main ul li, article {
     margin-bottom: 1rem;
     display: block;
     border-radius: 15px;
-    height: 200px;
+    height: auto;
     width: 90%;
-    border: 1px solid gray;
-    background-color: #808080;
+    border: 1.5px solid #302d2c;
+    background-color: #1E1A19;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
-  main ul li {
-    display: block;
-    background-color: blue;
-    height: 200px;
-    width: 90%;
-    border-radius: 15px;
+  article img, main ul li img {
+    width: 100%;
+  }
+
+  main h2,p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  article {
+    border-color: red;
+  }
+
+  main .date {
+    font-size: 12.6px;
+  }
+
+  main .info {
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
 
   /* MAIN / FOOTER END */
