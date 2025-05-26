@@ -203,14 +203,6 @@
       background-size: 200%; 
       background-repeat: no-repeat;
     }
-    .search-bar {
-      width: 80%; 
-      max-width: 250px;
-      font-size: 14px; 
-      padding: 8px; 
-      top: 20%; 
-    }
-  
     .search-bar.sticky {
       width: 90%; 
       max-width: 300px;
