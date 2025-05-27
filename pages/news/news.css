@@ -164,13 +164,24 @@
   /* MAIN / FOOTER END */
   /* PHONE SIZE */
 
-  @media (min-width: 600px) {
 
+  @media (min-width: 600px) and (max-width: 1024px) {
     ul {
-        padding: 0 0.6rem;
+      padding: 0 0.6rem;
     }
 
     main ul li {
-        width: calc(50% - 1rem);
+      width: calc(50% - 1rem);
+    }
+  }
+  @media (min-width: 1024px) {
+    article {
+      display: flex;
+      flex-direction: row;
+      background-color: lime;
+    }
+
+    main ul li {
+      width: calc(50% - 1rem);
     }
   }
