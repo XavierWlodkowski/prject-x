@@ -135,8 +135,8 @@
   /*Article begin*/
   article {
   padding: 50px 0;
-  background-color: #111;
   z-index: 0;
+  background-image: url(/Images/backgroundnews.jpg);
   }
 
   article ul {
@@ -152,11 +152,13 @@
     background-color: #d62828;
     height: 200px;
     width: 200px;
+    border-radius: 20%;
+    
   }
   /*Article end*/
   /*Begin footer*/
  footer {
-    background-color: #1a1a1a;
+    background-color: #3d3434;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -231,14 +233,18 @@
     .image-container {
       background-image: url(images/apexbackphone.jpg);
       height: 600px;
-      background-size: 200%; 
+      background-size: 240%; 
       background-repeat: no-repeat;
     }
     .search-bar.sticky {
       width: 90%; 
       max-width: 300px;
     }
+    nav{
+      display: none;
+    }
   }
+
   /*Tablet media query 1279px*/
 @media (min-width: 768px) and (max-width: 1279px){
       .image-container {

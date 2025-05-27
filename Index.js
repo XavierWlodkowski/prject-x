@@ -26,3 +26,4 @@ function moveBackground(e) {
   imageContainer.style.backgroundPosition = `${moveX}% ${moveY}%`;
 }
 imageContainer.addEventListener('mousemove', moveBackground);
+//header pop out
