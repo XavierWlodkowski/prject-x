@@ -174,3 +174,13 @@
         width: calc(50% - 1rem);
     }
   }
+
+  @media (min-width) {
+    ul {
+        padding: 0 0.6rem;
+    }
+
+    main ul li {
+        width: calc(50% - 1rem);
+    }
+  }
