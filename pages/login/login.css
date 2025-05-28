@@ -126,7 +126,8 @@ main div {
     display: block;
     opacity: 100%;
     height: auto;
-    width: 70%;
+    width: 80%;
+    max-width: 550px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -152,4 +153,11 @@ main div .arrow {
     height: 2rem;
     transform: translate(-1%, -50%);
     margin-bottom: 1rem;
+}
+
+@media (min-width: 2000px) {
+    main div {
+    transform: scale(150%);
+}
+
 }
