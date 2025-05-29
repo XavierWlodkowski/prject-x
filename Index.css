@@ -34,6 +34,7 @@
 
   .logo-container:hover {
     transform: scale(1.1);
+    transition: transform 0.2s;
   }
 
   .logo {
@@ -145,17 +146,16 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    border-radius: 10%;
   }
 
   article ul li {
     display:block;
-    background-color: #d62828;
+    background-color: #ac2f2f;
+    box-shadow: 0 6px 20px rgba(70, 1, 1, 0.5);
     height: 200px;
     width: 200px;
-  }
-  .rounded-img {
     border-radius: 20%;
+
   }
   /*Article end*/
   /*Begin footer*/
@@ -242,13 +242,13 @@
       width: 90%; 
       max-width: 300px;
     }
-    nav{
+    nav ul li not .button{
       display: none;
     }
   }
 
   /*Tablet media query 1279px*/
-@media (min-width: 768px) and (max-width: 1279px){
+@media (min-width: 768px){
       .image-container {
       background-image: url(images/apexbackphone.jpg);
       height: 600px;
@@ -256,6 +256,6 @@
       background-repeat: no-repeat;
     }
     article ul{
-    gap: 6rem;
+    gap: 4rem;
     }
 }
