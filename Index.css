@@ -146,16 +146,27 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   article ul li {
     display:block;
     background-color: #ac2f2f;
     box-shadow: 0 6px 20px rgba(70, 1, 1, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
     height: 200px;
     width: 200px;
     border-radius: 20%;
+  }
 
+  article ul li img {
+  transition: transform 0.3s ease;
+  }
+
+  article ul li:hover img {
+  transform: scale(1.1);
   }
   /*Article end*/
   /*Begin footer*/
@@ -242,8 +253,12 @@
       width: 90%; 
       max-width: 300px;
     }
-    nav ul li not .button{
-      display: none;
+    nav li {
+    display: none; 
+    }
+
+    nav li.keep-visible {
+    display: flex;
     }
   }
 

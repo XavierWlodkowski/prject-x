@@ -92,3 +92,12 @@ header {
   nav .button a:hover {
     background-color: rgba(255, 74, 74, 0.2);
   }
+  @media (max-width: 767px) {
+    nav li {
+    display: none; 
+    }
+
+    nav li.keep-visible {
+    display: flex;
+    }
+}
