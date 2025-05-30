@@ -100,4 +100,8 @@ header {
     nav li.keep-visible {
     display: flex;
     }
+
+    header { 
+      height: 20px;
+    }
 }
