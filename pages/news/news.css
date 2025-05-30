@@ -32,11 +32,7 @@
     height: 100%;
     background-color: #ff4a4a;
   }
-
-  .logo-container:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-  }
+  
   .logo {
     display: flex;
     align-items: center;
@@ -167,32 +163,53 @@
 
   /* MAIN / FOOTER END */
   /* PHONE SIZE */
-  @media (max-width: 600px) {
-        nav li {
-    display: none; 
-    }
 
-    nav li.keep-visible {
-    display: flex;
-    }
-  }
   @media (min-width: 600px) {
-    main ul li {
-      width: calc(50% - 1rem);
-    }
 
     ul {
-      padding: 0 0.6rem;
+        padding: 0 0.6rem;
+    }
+
+    main ul li {
+        width: calc(50% - 1rem);
     }
   }
 
   @media (min-width: 1024px) {
-    article {
-      display: flex;
-      flex-direction: row;
-    }
-
-    article img {
-      width: 70%;
-    }
+  main ul li {
+    width: calc(30%);
   }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+
+  article img {
+    width: 65%;
+    object-fit: cover;
+  }
+
+  article .text-box {
+    width: 35%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  article h2 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    margin-bottom: 0.6rem;
+  }
+
+  article p {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+}
