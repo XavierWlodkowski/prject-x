@@ -8,6 +8,6 @@ button.addEventListener('click', function() {
     } else{
         alert('Completed! You will be redirected shortly.')
         setTimeout(4000);
-        window.location.href = '/projekt-x/index.html';
+        window.location.href = '../../index.html';
     }
 });
