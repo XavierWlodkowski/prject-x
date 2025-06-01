@@ -1,15 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  background-color: rgb(29, 27, 27);
+  background-color: #1d1b1b;
 }
 
 header {
@@ -94,66 +94,66 @@ nav .button a:hover {
   background-color: rgba(255, 74, 74, 0.2);
 }
 
-.weapon-container {
+.retro-page {
   display: flex;
   justify-content: center;
-  gap: 30px;
   padding: 40px;
-  flex-wrap: wrap;
 }
 
-.weapon-card {
-  background-color: #bbbbbb; 
-  border: 5px solid #3498db; 
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  height: 300px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 20px rgba(52, 152, 219, 0.4); 
+.retro-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #0c0c0c;
+  border: 3px solid #3498db;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
 }
 
-.weapon-card:hover {
-  transform: scale(1.05);
+.retro-card img {
+  width: 50%;
+  object-fit: cover;
+  border-right: 2px solid #3498db;
 }
 
-.weapon-card img {
-  max-height: 200px;
+.retro-info {
+  padding: 20px;
+  width: 50%;
+}
+
+.retro-info h1 {
+  color: #3498db;
   margin-bottom: 10px;
-  transition: transform 0.3s;
 }
 
-.weapon-card:hover img {
-  transform: scale(1.1);
+.retro-info h2 {
+  color: #ff4a4a;
+  margin-bottom: 20px;
 }
 
-.weapon-card h3 {
-  color: #000000;
-  margin-top: 10px;
+.retro-info p {
+  margin: 8px 0;
+  line-height: 1.4;
 }
 
+.highlight {
+  color: #3498db;
+}
 
-  @media (max-width: 767px) {
-    nav li {
-    display: none; 
-    }
-
-    nav li.keep-visible {
-    display: flex;
-    }
+@media (max-width: 768px) {
+  .retro-card {
+    flex-direction: column;
+    align-items: center;
   }
 
-    @media (max-width: 767px) {
-    nav li {
-    display: none; 
-    }
-
-    nav li.keep-visible {
-    display: flex;
-    }
+  .retro-card img, .retro-info {
+    width: 100%;
+    text-align: center;
+    border-right: none;
   }
+
+  .retro-info {
+    padding: 20px 10px;
+  }
+}

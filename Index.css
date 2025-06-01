@@ -102,7 +102,7 @@
     height: 100vh;
     width: 100%;
     background-image: url('https://img.goodfon.com/original/2560x1440/d/37/apex-legends-respawn-entertainment-revenant-apex-legends-art.jpg');
-    background-size: 125%; 
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     transition: background-position 0.1s;
@@ -141,32 +141,44 @@
   }
 
   article ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    transform: scale(1.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0;
   }
 
   article ul li {
-    display:block;
-    background-color: #ac2f2f;
-    box-shadow: 0 6px 20px rgba(70, 1, 1, 0.5);
-    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
-    cursor: pointer;
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ac2f2f;
+  height: 220px;
+  width: 220px;
+  border-radius: 20%;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  article ul li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.8);
   }
 
   article ul li img {
+  max-height: 120px;
+  max-width: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.3s ease;
-  }
+  display: block;
+}
+
 
   article ul li:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
   }
   /*Article end*/
   /*Begin footer*/
