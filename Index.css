@@ -254,7 +254,7 @@
     background-color: #d62828;
 }
   /*End footer*/
-  /* GSM MEDIA QUERY */
+  /* GSM MEDIA QUERY. */
   @media (max-width: 767px) {
     .image-container {
       background-image: url(images/apexbackphone.jpg);
