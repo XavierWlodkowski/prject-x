@@ -109,7 +109,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: background-position 0.1s;
-    z-index: 1;
+    z-index: 0;
   }
   /*End searchbar*/
   /*Begin searchbar*/
@@ -276,3 +276,8 @@ body {
     display: flex;
     }
   }
+@media (min-width: 768px) {
+  .image-container {
+      background-image: url(Images/apexback.jpg);
+  }
+}
