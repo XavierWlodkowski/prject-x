@@ -13,8 +13,7 @@ window.onscroll = function () {
       searchBar.classList.remove("sticky");
     }
   }
-  
-  //backround beweging
+//backround beweging
 const imageContainer = document.querySelector('.image-container');
 function moveBackground(e) {
   const width = imageContainer.offsetWidth;
