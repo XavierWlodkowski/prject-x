@@ -10,7 +10,7 @@
   body {
     font-family: 'Segoe UI', sans-serif;
     color: white;
-    background-image: url(/Images/backgroundnews.jpg);
+    background-image: url(../../Images/backgroundnews.jpg);
   }
   
   header {
